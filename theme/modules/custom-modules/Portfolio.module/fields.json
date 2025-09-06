@@ -1,0 +1,355 @@
+[ {
+  "id" : "e895bbf5-e9c9-5152-a360-acf478d6093e",
+  "name" : "section_header",
+  "label" : "Section Header",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Featured Work"
+}, {
+  "id" : "b95f6439-bc34-250d-8575-af01d4c65681",
+  "name" : "section_paragraph",
+  "label" : "Section Paragraph",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Improve your online presence with a website that is fast, easy to use, and built with development best practices in mind."
+}, {
+  "id" : "1fea2c92-ba00-0cf7-1f98-aeca52844970",
+  "name" : "featured_work",
+  "label" : "Featured Work",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "dcac7d14-1faf-8245-a292-596c8a86f21f",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "dcac7d14-1faf-8245-a292-596c8a86f21f",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Brunswick Crossing"
+  }, {
+    "id" : "645995f1-cbfd-b3c8-9714-9bf095c83fca",
+    "name" : "logo",
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/22654981/portfolio/logos/brunswick-crossing-transparent.png",
+      "alt" : "brunswick-crossing-transparent",
+      "loading" : "lazy",
+      "width" : 328,
+      "height" : 76,
+      "max_width" : 328,
+      "max_height" : 76
+    }
+  }, {
+    "id" : "9d94a0fd-20ff-4cb9-bbe8-32642bc8810a",
+    "name" : "industry",
+    "label" : "Industry",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Residential Community"
+  }, {
+    "id" : "4e23a008-5b9a-19ce-6a34-7a76f391c345",
+    "name" : "description",
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : " Brunswick Crossing is a signature community of new construction homes in Frederick County, Maryland. "
+  }, {
+    "id" : "5f87dbe1-b392-d5c7-74f4-e827e1704c97",
+    "name" : "featured_image",
+    "label" : "Featured Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://cdn2.hubspot.net/hubfs/22654981/portfolio/projects/brunswick-crossing/brunswick-crossing-after.png",
+      "alt" : "brunswick-crossing-after",
+      "loading" : "lazy",
+      "width" : 2880,
+      "height" : 1904,
+      "max_width" : 2000,
+      "max_height" : 1322.2222222222222
+    }
+  }, {
+    "id" : "d430894b-2edf-76a0-1305-ba43db895641",
+    "name" : "link",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "https://www.google.com",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "id" : "0c4ce3cd-48b3-ecf6-0f67-42aecea6dd6b",
+    "name" : "project_page",
+    "label" : "Project Page?",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  }, {
+    "id" : "2bcf0ce8-f3ef-5807-db00-e9e132d4b55d",
+    "name" : "project_link",
+    "label" : "Project Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "https://www.google.com",
+      "type" : "EXTERNAL"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "title" : "Brunswick Crossing",
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/22654981/portfolio/logos/brunswick-crossing-transparent.png",
+      "alt" : "brunswick-crossing-transparent",
+      "loading" : "lazy",
+      "width" : 328,
+      "height" : 76,
+      "max_width" : 328,
+      "max_height" : 76
+    },
+    "industry" : "Residential Community",
+    "description" : " Brunswick Crossing is a signature community of new construction homes in Frederick County, Maryland. ",
+    "featured_image" : {
+      "size_type" : "auto_custom_max",
+      "src" : "https://cdn2.hubspot.net/hubfs/22654981/portfolio/projects/brunswick-crossing/brunswick-crossing-after.png",
+      "alt" : "brunswick-crossing-after",
+      "loading" : "lazy",
+      "width" : 2880,
+      "height" : 1904,
+      "max_width" : 2000,
+      "max_height" : 1322.2222222222222
+    },
+    "link" : {
+      "content_id" : null,
+      "href" : "https://www.google.com",
+      "type" : "EXTERNAL"
+    },
+    "project_page" : false,
+    "project_link" : {
+      "content_id" : null,
+      "href" : "https://www.google.com",
+      "type" : "EXTERNAL"
+    }
+  } ]
+}, {
+  "id" : "f592a06c-f00b-af49-3450-a5f5630e0cda",
+  "name" : "include_cta",
+  "label" : "Include CTA?",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : false
+}, {
+  "id" : "aaf26fa9-0717-60f1-8981-6c0767dcb92c",
+  "name" : "cta_link",
+  "label" : "CTA Link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER" ],
+  "type" : "url",
+  "display_width" : null,
+  "default" : {
+    "content_id" : null,
+    "href" : "https://www.yahoo.com",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "07b2088b-989b-f869-adb7-d3057335d341",
+  "name" : "cta_text",
+  "label" : "CTA Text",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Lorem Ipsum Dolor Sit"
+}, {
+  "id" : "7bf2efec-da04-0366-87c6-83a91348d61d",
+  "name" : "section_subheader",
+  "label" : "Section subheader",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Other Projects"
+}, {
+  "id" : "a1896cbe-3ff3-8655-ce85-0d19aae9ec03",
+  "name" : "other_work",
+  "label" : "Other Projects",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 3,
+    "max" : null,
+    "sorting_label_field" : "105757e2-f249-80fd-6930-25b3a339bee7",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "df404626-5a1a-d6eb-2c08-59a482b60de1",
+    "name" : "other_link",
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER" ],
+    "type" : "url",
+    "display_width" : null,
+    "default" : {
+      "content_id" : null,
+      "href" : "https://www.google.com",
+      "type" : "EXTERNAL"
+    }
+  }, {
+    "id" : "105757e2-f249-80fd-6930-25b3a339bee7",
+    "name" : "other_logo",
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/22654981/portfolio/logos/dwogg-logo-web-250.png",
+      "alt" : "dwogg-logo-web-250",
+      "loading" : "lazy",
+      "width" : 250,
+      "height" : 114,
+      "max_width" : 250,
+      "max_height" : 114
+    }
+  }, {
+    "id" : "08d4181c-1821-b5bb-e31c-92e20a7a8933",
+    "name" : "color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : "#f7f7f7",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "other_link" : {
+      "content_id" : null,
+      "href" : "https://www.google.com",
+      "type" : "EXTERNAL"
+    },
+    "other_logo" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/22654981/portfolio/logos/dwogg-logo-web-250.png",
+      "alt" : "dwogg-logo-web-250",
+      "loading" : "lazy",
+      "width" : 250,
+      "height" : 114,
+      "max_width" : 250,
+      "max_height" : 114
+    },
+    "color" : {
+      "color" : "#f7f7f7",
+      "opacity" : 100
+    }
+  }, {
+    "other_link" : {
+      "content_id" : null,
+      "href" : "https://www.google.com",
+      "type" : "EXTERNAL"
+    },
+    "other_logo" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/22654981/portfolio/logos/dwogg-logo-web-250.png",
+      "alt" : "dwogg-logo-web-250",
+      "loading" : "lazy",
+      "width" : 250,
+      "height" : 114,
+      "max_width" : 250,
+      "max_height" : 114
+    },
+    "color" : {
+      "color" : "#f7f7f7",
+      "opacity" : 100
+    }
+  }, {
+    "other_link" : {
+      "content_id" : null,
+      "href" : "https://www.google.com",
+      "type" : "EXTERNAL"
+    },
+    "other_logo" : {
+      "size_type" : "auto",
+      "src" : "https://cdn2.hubspot.net/hubfs/22654981/portfolio/logos/dwogg-logo-web-250.png",
+      "alt" : "dwogg-logo-web-250",
+      "loading" : "lazy",
+      "width" : 250,
+      "height" : 114,
+      "max_width" : 250,
+      "max_height" : 114
+    },
+    "color" : {
+      "color" : "#f7f7f7",
+      "opacity" : 100
+    }
+  } ]
+} ]

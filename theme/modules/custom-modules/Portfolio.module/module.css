@@ -1,0 +1,204 @@
+.portfolio {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.portfolio .featured-work .card-info a {
+    display: flex;
+    width: 100%;
+    background-color: #f9f9f9;
+    justify-content: center;
+}
+
+.portfolio .featured-work .card-info a img {
+    padding: 2rem;
+    max-width: 285px;
+}
+
+.portfolio .featured-work .card-info a.view-site {
+    background-color: transparent;
+    font-size: 16px;
+    text-align: left;
+    display: inline-block;
+}
+
+.portfolio .featured-work .card-info p {
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.portfolio .featured-work .card-info h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.portfolio .featured-work .card-info h3 {
+    margin-bottom: 4px;
+    margin-top: 1rem;
+}
+
+.portfolio .featured-work .card-info {
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 640px) {
+    .portfolio .featured-work .card-info {
+        display: grid;
+        grid-template-areas: "logo header" "logo subheader" "logo paragraph" "logo link";
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 4px 1rem;
+    }
+    .portfolio .featured-work .card-info a {
+        grid-area: logo;
+        align-items: center;
+    }
+    .portfolio .featured-work .card-info a.view-site {
+        grid-area: link;
+    }
+    .portfolio .featured-work .card-info h3 {
+        grid-area: header;
+        margin-top: 0;
+    }
+    .portfolio .featured-work .card-info h4 {
+        grid-area: subheader;
+    }
+    .portfolio .featured-work .card-info p {
+        grid-area: paragraph;
+    }
+    .portfolio .featured-work .card-info a img {
+        width: auto;
+        object-fit: contain;
+        max-height: 150px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio .section-content {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .portfolio .featured-work .card {
+        display: flex;
+    }
+    .portfolio .featured-work .card-info {
+        display: block;
+        padding-right: 2rem;
+        width: 35%;
+    }
+    .portfolio .featured-work .card-info a img {
+        padding: 2rem 2rem;
+    }
+    .portfolio .featured-work .card-content {
+        width: 65%;
+        padding-left: 2rem;
+    }
+    .portfolio .featured-work .card-content a {
+        display: inline-block;
+        border: 1px solid #f9f9f9;
+    }
+    .portfolio .featured-work .card-info h3 {
+        margin-top: 1.5rem;
+    }
+}
+
+.portfolio .featured-work .card {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease;
+}
+
+.portfolio .featured-work .card:last-of-type {
+    border-bottom: 0;
+    margin: 0;
+    padding: 0
+}
+
+.portfolio .featured-work .card .card-content a {
+    display: flex;
+}
+
+.portfolio .featured-work .card .card-info a {
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+    .portfolio .featured-work .card:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+    .portfolio .featured-work .card:nth-of-type(even) .card-info {
+        padding-right: 0;
+        padding-left: 2rem;
+    }
+    .portfolio .featured-work .card:nth-of-type(even) .card-content {
+        padding-left: 0;
+        padding-right: 2rem;
+    }
+    .portfolio .featured-work .card .card-info a {
+        min-height: 150px;
+    }
+    .portfolio .featured-work .card-info a.view-site {
+        min-height: auto;
+    }
+}
+
+.portfolio .featured-work .card .card-content a img {
+    border: 1px solid #ddd;
+}
+
+@media screen and (min-width: 1024px) {
+    .portfolio .featured-work .card .card-content a {
+        background-color: #f7f7f7;
+        padding: 1rem;
+    }
+}
+
+
+
+.portfolio .other-work {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.portfolio .other-work .card {
+    border: 1px solid #ddd;
+}
+
+.portfolio .other-work .card img {
+    padding: 2rem;
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.portfolio .other-work .card a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.portfolio .other-work .section-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio .other-work .section-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .portfolio .other-work {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .portfolio .other-work .card img {
+        padding: 3rem;
+    }
+}

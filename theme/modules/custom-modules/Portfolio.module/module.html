@@ -1,0 +1,64 @@
+<div id="portfolio" class="portfolio">
+    <div class="wrapper">
+        <div class="section-header">
+            <h2>
+                {{ module.section_header }}
+            </h2>
+            <p>
+                {{ module.section_paragraph }}
+            </p>
+        </div>
+        <div class="section-content">
+            <div class="featured-work">
+                {% for item in module.featured_work %}
+                <div class="card wow fadeIn" data-wow-duration="3s">
+                    <div class="card-info">
+                        <a target="_blank" href="{{ item.link.href }}">
+                            <img src="{{ item.logo.src }}" alt="{{ item.title }}">
+                        </a>
+                        <h3>
+                            {{ item.title }}
+                        </h3>
+                        <h4>
+                            {{ item.industry }}
+                        </h4>
+                        <p>
+                            {{ item.description }}
+                        </p>
+                        {% if item.project_page %}
+                        <a target="_blank" class="view-site view-project" href="{{ item.project_link.href }}"><i class="fa-solid fa-arrow-up-right-from-square"></i> Project Details</a>
+                        {% endif %}
+                        <a target="_blank" class="view-site" href="{{ item.link.href }}"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Site</a>
+                    </div>
+                    <div class="card-content">
+                        <a target="_blank" href="{{ item.link.href }}">
+                            <img src="{{ item.featured_image.src }}" alt="{{ item.title }}'s new homepage">
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="other-work">
+                <div class="section-header">
+                    <h3>
+                        {{ module.section_subheader }}
+                    </h3>
+                </div>
+                <div class="section-content">
+                    {% for item in module.other_work %}
+                    <div class="card wow fadeIn" data-wow-duration="1s" style="background-color: {{ item.color.color }}">
+                        <a target="_blank" href="{{ item.other_link.href }}">
+                            <img src="{{ item.other_logo.src }}" alt="{{ item.other_logo.alt}}">
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {#{% if module.include_cta %}
+            <div class="section-cta">
+                <a target="_blank" class="cta_button btn-primary" href="{{ module.cta_link.href }}">{{ module.cta_text }}</a>
+            </div>
+            {% endif %}#}
+        </div>
+    </div>
+</div>

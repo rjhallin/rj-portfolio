@@ -1,0 +1,55 @@
+<!--
+  templateType: blog_listing
+  isAvailableForNewContent: true
+  label: New Portfolio Theme - Blog Listing
+-->
+{% set template_css = "../../css/templates/blog.css" %}
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+<div class="blog-index">
+    <div class="content-wrapper">
+        <div class="featured-blog">
+            <div class="text-container">
+                <a href="{% text 'featured_post_link' label='Featured Post Link' value='https://www.rjhallin.me/blog/website-growth-expectations-vs-reality' no_wrapper=True %}">
+                    <h1>
+                        {% text "featured_post_title" label="Featured Post Title" value="Website Growth: Expectations vs. Reality" no_wrapper=True %}
+                    </h1>
+                </a>
+                <p>
+                    {% text "feaured_post_summary" label="Featured Post Summary" value="Website growth is a subject that often harbors unrealistic expectations and misconceptions. Let's shed some light on the contrast between expectations and reality in this captivating journey." no_wrapper=True %}
+                </p>
+                <a href="{% text 'featured_post_link' label='Featured Post Link' value='https://www.rjhallin.me/blog/website-growth-expectations-vs-reality' no_wrapper=True %}" class="read-more">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            <div class="image-container">
+                <a href="{% text 'featured_post_link' label='Featured Post Link' value='https://www.rjhallin.me/blog/website-growth-expectations-vs-reality' no_wrapper=True %}">
+                    {% image "feathred_post_image" src="https://www.rjhallin.me/hubfs/new-portfolio/blog-images/website-growth.png" alt="Website Growth" label="Featured Post Image" no_wrapper=True %}
+                </a>
+            </div>
+        </div>
+        <hr>
+        <div class="post-listing">
+            {% for content in contents %}
+            <div class="post">
+                <div class="post-image">
+                    <a href="{{ content.absolute_url }}">
+                        <img loading="lazy" src="{{ content.featured_image }}" alt="{{ content.name }}">
+                    </a>
+                </div>
+                <div class="post-content">
+                    <a href="{{ content.absolute_url }}">
+                    <h4>
+                        {{ content.name }}
+                    </h4>
+                    </a>
+                    <p>
+                        {{ content.meta_description }}
+                    </p>
+                    <a href="{{ content.absolute_url }}" class="read-more">Read More <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock body %}
