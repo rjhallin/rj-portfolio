@@ -1,0 +1,19 @@
+[ {
+  "name" : "section_header",
+  "label" : "Section Header",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Featured Work"
+}, {
+  "name" : "section_paragraph",
+  "label" : "Section Paragraph",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Improve your online presence with a website that is fast, easy to use, and built with development best practices in mind."
+} ]
