@@ -13,7 +13,7 @@ jobs:
       - name: HubSpot Deploy Action
         uses: HubSpot/hubspot-cms-deploy-action@v2.0.1
         with:
-          src_dir: /dev/rj-portfolio/theme
+          src_dir: dev/rj-portfolio/theme
           dest_dir: NewPortfolio
           account_id: ${{ vars.accountId }}
           personal_access_key: ${{ secrets.hubspot_personal_access_key }}
